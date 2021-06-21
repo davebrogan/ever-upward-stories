@@ -1,0 +1,1 @@
+compile story-page scss separately.

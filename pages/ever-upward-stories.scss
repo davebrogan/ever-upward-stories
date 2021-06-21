@@ -1,0 +1,43 @@
+/****** Utilities *******/
+@import "../ui-utilities-master/variables";
+@import "../ui-utilities-master/placeholders";
+@import "../ui-utilities-master/functions";
+@import "../ui-utilities-master/mixins";
+
+/******* Global CSS *******/
+.showcase-html-section {
+  box-shadow: none;
+  @media #{$target-laptop-over} {
+	padding-top: 158px;
+  }
+  @media #{$target-break-desktop} {
+    font-size: 120%;
+  }
+}
+
+.mobile-logo {
+  position: initial;
+  margin-top: 50px;
+}
+
+/******* Templates *******/
+//story-page scss compiles to separate sheet in /story-page
+
+@import "main-page/prod/main-page-prod";
+//@import "archive-page/archive-page";
+//@import "main-page/dev/main-page-dev";
+//@import "main-page/v3/main-page-v3.scss";
+
+/******* Modules *******/
+
+/****** Custom Typography ********/
+@font-face {
+  font-family: 'honest-designer';
+  src: local('honest-designer');
+  src: url("https://www.weber.edu/wsuimages/ever-upward/fonts/honestscript-regular-webfont.woff2") format("woff2"),/* Modern Browsers */
+  url("https://www.weber.edu/wsuimages/ever-upward/fonts/honestscript-regular-webfont.woff") format("woff");/* Modern Browsers */
+  unicode-range: U+0020-007E;
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}

@@ -1,0 +1,130 @@
+/****** Utilities *******/
+/********* Main Page ************/
+.showcase-html-section {
+  padding-top: 0;
+}
+
+.stories-header__page-intro__text {
+  color: initial;
+}
+
+/***************flip cards*******************/
+.story-flip-card:nth-child(odd) .story-flip-card__inner .story-flip-card__front, .story-flip-card:nth-child(odd) .story-flip-card__inner .story-flip-card__back {
+  background-color: #8446ac;
+}
+
+.story-flip-card:nth-child(even) .story-flip-card__inner .story-flip-card__front, .story-flip-card:nth-child(even) .story-flip-card__inner .story-flip-card__back {
+  background-color: #464945;
+}
+
+.story-flip-card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.story-flip-card {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  position: relative;
+}
+.story-flip-card__inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.story-flip-card:hover .story-flip-card__inner {
+  transform: rotateY(-180deg);
+}
+.story-flip-card__front, .story-flip-card__back {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.story-flip-card__front {
+  justify-content: center;
+  align-items: flex-end;
+}
+.story-flip-card__front__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 100;
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  bottom: 0;
+}
+.story-flip-card__front__name {
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  font-size: 1.5em !important;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.story-flip-card__front__major {
+  color: #FFFFFF !important;
+  font-size: 1.1em;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.story-flip-card__back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  padding: 1em;
+}
+.story-flip-card__back__blurb {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  height: 75%;
+}
+.story-flip-card__back__link {
+  background-color: #FFFFFF;
+  color: #8446ac !important;
+  font-size: 1em;
+}
+.story-flip-card__back__link:hover {
+  color: #FFFFFF !important;
+}
+
+.edit-button-wrapper {
+  justify-content: center;
+}
+
+.edit-button {
+  margin: 1em;
+}
+
+.freeze-flip {
+  transform: none;
+}

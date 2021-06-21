@@ -1,0 +1,133 @@
+@media only screen and (min-width: 1025px) {
+    .story-page-main {
+        max-width: 70em;
+        margin: 0 auto;
+        padding: 3em;
+        background-color: rgba(238, 237, 236, 0.9);
+        position: relative;
+        /*top: -184px;*/
+        top: -127px;
+    }
+}
+
+.page-story-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #492365 !important;
+    font-family: "tradegothicltstd-boldext", sans-serif !important;
+    font-size: 2rem !important;
+}
+
+blockquote p {
+    color: #575047;
+    font-family: tradegothicltcom-boldobl, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.foot-links {
+    background-color: #492365;
+    padding-top: 40px;
+}
+.foot-links__title.title-override {
+    font-family: "honest-designer", cursive !important;
+    text-align: center;
+    color: #FFF !important;
+    font-size: 3em !important;
+}
+
+.foot-link-flex {
+    display: flex;
+    align-items: center;
+}
+
+.foot-link-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    -ms-flex-pack: center;
+    width: 100%;
+}
+
+.direc-link {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 20px 20px;
+    text-transform: uppercase;
+}
+
+.direc-btn {
+    margin-bottom: 0px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: column;
+}
+.direc-btn__link {
+    text-decoration: none !important;
+}
+.direc-btn__text {
+    display: block;
+    font-family: "tradegothiclt", sans-serif;
+    color: #FFF !important;
+    transition: all 0.3s linear;
+    font-size: large;
+}
+.direc-btn__text:hover {
+    color: #FFF !important;
+}
+
+.direc-btn:hover {
+    transform: scale(1.08);
+}
+
+.direc-anchor {
+    font-family: "tradegothiclt", sans-serif;
+    color: #FFF !important;
+    transition: all 0.3s linear;
+    font-size: large;
+}
+
+a.direc-anchor:hover {
+    color: #FFF !important;
+}
+
+svg.foot-icons {
+    fill: #FFF;
+    height: 130px;
+    max-width: 100px;
+}
+
+svg.foot-icons:hover {
+    fill: #FFF;
+}
+
+/********************** media queries *****************/
+@media screen and (max-width: 1024px) {
+    .foot-link-flex {
+        border-right: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .foot-link-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .foot-links {
+        margin-top: -100px;
+    }
+}
+
+/******* Modules *******/
+/****** Custom Typography ********/
+@font-face {
+    font-family: "honest-designer";
+    src: local("honest-designer");
+    src: url("https://www.weber.edu/wsuimages/ever-upward/fonts/honestscript-regular-webfont.woff2") format("woff2"), url("https://www.weber.edu/wsuimages/ever-upward/fonts/honestscript-regular-webfont.woff") format("woff");
+    /* Modern Browsers */
+    unicode-range: U+0020-007E;
+    font-weight: 700;
+    font-style: normal;
+}

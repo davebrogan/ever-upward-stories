@@ -3,11 +3,6 @@
 .showcase-html-section {
   box-shadow: none;
 }
-@media only screen and (min-width: 1025px) {
-  .showcase-html-section {
-    padding-top: 158px;
-  }
-}
 @media only screen and (min-width: 1500px) {
   .showcase-html-section {
     font-size: 120%;

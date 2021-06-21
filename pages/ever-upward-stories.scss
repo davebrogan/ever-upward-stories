@@ -7,9 +7,6 @@
 /******* Global CSS *******/
 .showcase-html-section {
   box-shadow: none;
-  @media #{$target-laptop-over} {
-	padding-top: 158px;
-  }
   @media #{$target-break-desktop} {
     font-size: 120%;
   }

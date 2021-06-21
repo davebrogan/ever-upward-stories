@@ -1,1 +1,11 @@
 compile story-page scss separately.
+
+To create concatenated/minified css file:
+
+1. Compile ever-upward-stories.scss to css/ever-upward-stories.css
+
+2. cat ui-mod-base.css ui-global-styles.css ever-upward-stories.css > ever-upward-cat.css
+
+3. minify ever-upward-cat.css
+
+-

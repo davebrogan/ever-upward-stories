@@ -30,7 +30,7 @@ $(document).ready(function() {
                 timer = setTimeout(function(){
                     block.addClass('show-block');
                 },100);
-                //alert('triggered');
+                console.log('fly triggered');
             } else {
                 timer = setTimeout(function(){
                     block.removeClass('hide-block');
@@ -46,12 +46,12 @@ $(document).ready(function() {
                 timer = setTimeout(function(){
                     block.addClass('show-fade');
                 },50);
-                //console.log('Im triggered!');
+                console.log('Im triggered!');
             } else {
                 timer = setTimeout(function(){
                     block.removeClass('hide-fade');
                 },50);
-                //console.log('Im untriggered!');
+                console.log('Im untriggered!');
             }
         });
     }

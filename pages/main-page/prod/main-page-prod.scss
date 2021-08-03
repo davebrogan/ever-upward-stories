@@ -211,7 +211,7 @@ section {
 
 /*************** Brag Badges **********************/
 .brag-badges {
-  background-color: wsu-palette($hlcolor-colors, 2);
+  background: wsu-palette($hlcolor-colors, 2) url(https://www.weber.edu/wsuimages/ever-upward/images/banners/malans-peak-sky-background.jpg) left bottom/cover no-repeat;
   &__wrap {
 	display: flex;
 	justify-content: space-evenly;

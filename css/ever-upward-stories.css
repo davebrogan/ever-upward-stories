@@ -241,7 +241,7 @@ section.stories-intro--background {
 }
 /*************** Brag Badges **********************/
 .brag-badges {
-  background-color: #c1a2d5;
+  background: #c1a2d5 url(https://www.weber.edu/wsuimages/ever-upward/images/banners/malans-peak-sky-background.jpg) left bottom/cover no-repeat;
 }
 .brag-badges__wrap {
   display: flex;
@@ -441,7 +441,7 @@ svg.foot-icons:hover {
   text-transform: uppercase;
   font-family: "tradegothicltcom-bdcn20", sans-serif;
 }
-/******* Modules *******/
+/********** Modules **************/
 /****** Custom Typography ********/
 @font-face {
   font-family: "honest-designer";

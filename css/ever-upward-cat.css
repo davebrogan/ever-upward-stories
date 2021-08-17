@@ -4515,7 +4515,7 @@ section.stories-intro--background {
 }
 .card-module-story-full__header {
   position: relative;
-  background-color: #492365;
+  background: linear-gradient(90deg, #8446ac, #492365 38%);
   display: flex;
 }
 .card-module-story-full__header__between {

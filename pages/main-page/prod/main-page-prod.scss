@@ -130,7 +130,8 @@ section {
   /********* Stories Card - Full width **********/
   &-full__header {
 	position: relative;
-	background-color: wsu-palette($wcpurp-colors, 1);
+	//background-color: wsu-palette($wcpurp-colors, 1);
+	background: linear-gradient(90deg, #8446ac, #492365 38%);
 	display: flex;
 	&__between {
 	  width: 40%;
